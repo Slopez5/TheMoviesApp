@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>primaryColor</key>
+	<string>#0d253f</string>
+	<key>imagePath</key>
+	<string>https://image.tmdb.org/t/p/w500</string>
+	<key>APIUrl</key>
+	<string>https://api.themoviedb.org/</string>
+	<key>versionAPI</key>
+	<string>3</string>
+	<key>apiKey</key>
+	<string>c55d2777dc24be4d7c73c00f536c40df</string>
+</dict>
+</plist>
