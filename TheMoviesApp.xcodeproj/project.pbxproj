@@ -393,13 +393,37 @@
 		8BF54F6D292565CE005A8E77 /* MoviesCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				8BF54F7C29258F5E005A8E77 /* Cell */,
+				8BF54F7B29258F4C005A8E77 /* DataSource */,
+				8BF54F7A29258F40005A8E77 /* Layout */,
 				8BF54F6E292565EC005A8E77 /* MoviesCollectionView.swift */,
-				8BF54F702925662C005A8E77 /* MoviesDataSource.swift */,
-				8BF54F7229256657005A8E77 /* CardMovieView.swift */,
-				8BF54F7429256C22005A8E77 /* MovieCollectionCell.swift */,
-				8BF54F7629257E4C005A8E77 /* MoviesCollectionLayout.swift */,
 			);
 			path = MoviesCollectionView;
+			sourceTree = "<group>";
+		};
+		8BF54F7A29258F40005A8E77 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				8BF54F7629257E4C005A8E77 /* MoviesCollectionLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		8BF54F7B29258F4C005A8E77 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8BF54F702925662C005A8E77 /* MoviesDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		8BF54F7C29258F5E005A8E77 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8BF54F7229256657005A8E77 /* CardMovieView.swift */,
+				8BF54F7429256C22005A8E77 /* MovieCollectionCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A73470E98FCE47FFED1F5D82 /* Pods */ = {

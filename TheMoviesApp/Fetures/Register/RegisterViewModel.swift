@@ -14,7 +14,7 @@ class RegisterViewModel {
     let auth:ObservableObject<Bool?> = ObservableObject(nil)
     
     func register(email:String, password:String) {
-        Auth.auth().createUser(withEmail: email, password: password) {  [weak self] authResult, error in
+        UserAPI().register(email: email, password: password) {  [weak self] authResult, error in
             DispatchQueue.main.async {
                 if error != nil {
                     self?.auth.value = false

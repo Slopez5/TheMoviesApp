@@ -7,6 +7,12 @@
 
 import Foundation
 
-class MessageRequest {
-    static let shared = MessageRequest()
+struct PopularMoviesRequest:Encodable {
+    let api_key = Settings.shared.apiKey
+    
+    func getParams() -> NSDictionary{
+        return [
+            "api_key":api_key
+        ] as NSDictionary
+    }
 }

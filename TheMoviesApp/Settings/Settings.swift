@@ -10,7 +10,7 @@ import UIKit
 
 class Settings {
     static let shared = Settings()
-    var isLogged:Bool = false
+    var isLogged:Bool = true
     var primaryColor:UIColor?
     var secondaryColor:UIColor?
     var apiURL:String?
@@ -26,7 +26,7 @@ class Settings {
         if let colorHex = brandingPlist["secondaryColor"] as? String {
             self.secondaryColor = UIColor(hex: colorHex)
         }
-        self.apiURL = (brandingPlist["apiURL"] as? String ?? "") + (brandingPlist["versionAPI"] as? String ?? "")
+        self.apiURL = (brandingPlist["APIUrl"] as? String ?? "") + (brandingPlist["versionAPI"] as? String ?? "")
         self.apiKey = brandingPlist["apiKey"] as? String
         
     }

@@ -3,12 +3,37 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "Settings.init():Settings.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "brandingPlist[&quot;apiURL&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in API.call():API.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MovieAPI.popularMovies(_:):MovieAPI.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "APIRoutes.populatMovies">
+            </PersistentString>
+            <PersistentString
+               value = "(Settings.shared.apiURL ?? &quot;&quot;) + APIRoutes.populatMovies">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in closure #1 in RegisterViewModel.register(email:password:):RegisterViewModel.swift">
          <PersistentStrings>
             <PersistentString
                value = "error">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in LoginViewModel.login(email:password:):LoginViewModel.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

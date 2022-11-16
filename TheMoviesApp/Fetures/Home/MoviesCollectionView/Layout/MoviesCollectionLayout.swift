@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ResidentialDevelopmentCollectionLayout:UICollectionViewFlowLayout {
+class MoviesCollectionLayout:UICollectionViewFlowLayout {
     override func prepare() {
         super.prepare()
         self.itemSize = CGSize(width: 160, height: 100)

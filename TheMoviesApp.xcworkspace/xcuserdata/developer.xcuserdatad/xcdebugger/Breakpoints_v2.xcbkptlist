@@ -7,96 +7,208 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "37935603-373E-4C54-AB6D-BFE0831087F4"
+            uuid = "A9D20021-41EF-40E9-9BB4-CFB292E36ECD"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TheMoviesApp/Fetures/Register/RegisterView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "registerAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C94DA52E-71CD-45C0-82FB-83055F9091C5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TheMoviesApp/Fetures/Register/RegisterViewModel.swift"
+            filePath = "TheMoviesApp/Services/MovieAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "register(email:password:)"
+            landmarkName = "popularMovies(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3A029FB7-9EF4-474B-A8CA-C04EF581B837"
+            uuid = "E8CB11DB-FE6E-4DCF-AC7C-DACFFA995349"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TheMoviesApp/Fetures/Register/RegisterViewModel.swift"
+            filePath = "TheMoviesApp/Fetures/Home/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "register(email:password:)"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "popularMovies()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5D2AFC91-70C8-4656-9503-FB427E335813"
-            shouldBeEnabled = "Yes"
+            uuid = "D85204C0-0CA5-4179-994A-123745072332"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TheMoviesApp/Fetures/Login/LoginViewModel.swift"
+            filePath = "TheMoviesApp/Fetures/Home/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "login(email:password:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "HomeViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "229858E1-925A-473E-972E-1E5E3E9140D2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheMoviesApp/Services/MovieAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "popularMovies(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BE6A582A-34FB-4E74-A99F-050ACA0AC7F9"
-            shouldBeEnabled = "Yes"
+            uuid = "A8A53630-24AA-4291-8A34-11E1CFBDCEDA"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TheMoviesApp/Fetures/Register/RegisterViewModel.swift"
+            filePath = "TheMoviesApp/Services/API.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "register(email:password:)"
+            landmarkName = "call(url:params:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4C761DD2-CD50-4543-AC96-726BED7E85C2"
+            uuid = "BB2311B7-ED73-4865-BEEB-3C21DA5BA3F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheMoviesApp/Services/API.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "call(url:params:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BB2311B7-ED73-4865-BEEB-3C21DA5BA3F5 - 268f85d53ce91cd8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Swift.Optional&lt;Foundation.Data&gt;, Alamofire.AFError&gt;) -&gt; () in TheMoviesApp.API.call(url: Swift.String, params: Swift.Dictionary&lt;Swift.String, Any&gt;, _: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "TheMoviesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/developer/Documents/Projects/Sergio/TheMoviesApp/TheMoviesApp/Services/API.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "BB2311B7-ED73-4865-BEEB-3C21DA5BA3F5 - 268f85d53ce91cd8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Alamofire.DataResponse&lt;Swift.Optional&lt;Foundation.Data&gt;, Alamofire.AFError&gt;) -&gt; () in TheMoviesApp.API.call(url: Swift.String, params: Swift.Dictionary&lt;Swift.String, Any&gt;, _: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "TheMoviesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/developer/Documents/Projects/Sergio/TheMoviesApp/TheMoviesApp/Services/API.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "219">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5D8C3F8-5FC5-4D71-B6CB-BD4C0A8F177C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TheMoviesApp/Fetures/Register/RegisterViewModel.swift"
+            filePath = "TheMoviesApp/Fetures/Home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "register(email:password:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "setUpBinds()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F5D8C3F8-5FC5-4D71-B6CB-BD4C0A8F177C - bf9ce6fb787cfe2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;TheMoviesApp.Movies&gt;) -&gt; () in TheMoviesApp.HomeView.setUpBinds() -&gt; ()"
+                  moduleName = "TheMoviesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/developer/Documents/Projects/Sergio/TheMoviesApp/TheMoviesApp/Fetures/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "121">
+               </Location>
+               <Location
+                  uuid = "F5D8C3F8-5FC5-4D71-B6CB-BD4C0A8F177C - bf9ce6fb787cfe2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;TheMoviesApp.Movies&gt;) -&gt; () in TheMoviesApp.HomeView.setUpBinds() -&gt; ()"
+                  moduleName = "TheMoviesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/developer/Documents/Projects/Sergio/TheMoviesApp/TheMoviesApp/Fetures/Home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "179">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B94BC316-E960-4406-AE81-3655E1B37B1F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheMoviesApp/Fetures/Home/MoviesCollectionView/MoviesCollectionView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "reloadMovies(movies:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83A6A282-C372-4199-B951-0DC6D93FB4DA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheMoviesApp/Fetures/Home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "changeCategory(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
