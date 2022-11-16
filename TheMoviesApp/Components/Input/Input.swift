@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-enum InputType {
+enum InputStyle {
     case text
     case email
     case phone
@@ -16,12 +16,12 @@ enum InputType {
 }
 
 class Input:UITextField {
-    private var inputType:InputType = .text
+    private var inputType:InputStyle = .text
     
-    init(type:InputType){
+    init(type:InputStyle){
         super.init(frame: .zero)
         self.inputType = type
-        
+        setBranding()
     }
     
     required init?(coder: NSCoder) {
@@ -44,5 +44,8 @@ class Input:UITextField {
         case .phone:
             break
         }
+        NSLayoutConstraint.activate([
+            self.heightAnchor.constraint(equalToConstant: 40)
+        ])
     }
 }

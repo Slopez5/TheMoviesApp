@@ -12,13 +12,19 @@ class Settings {
     static let shared = Settings()
     var isLogged:Bool = false
     var primaryColor:UIColor?
+    var secondaryColor:UIColor?
     var apiURL:String?
     var apiKey:String?
+    var fontSize:CGFloat = 16
+    var fontFamily:UIFont?
     
     init(){
         guard let brandingPlist = getBrandingPlist() else { return }
         if let colorHex = brandingPlist["primaryColor"] as? String {
             self.primaryColor = UIColor(hex: colorHex)
+        }
+        if let colorHex = brandingPlist["secondaryColor"] as? String {
+            self.secondaryColor = UIColor(hex: colorHex)
         }
         self.apiURL = (brandingPlist["apiURL"] as? String ?? "") + (brandingPlist["versionAPI"] as? String ?? "")
         self.apiKey = brandingPlist["apiKey"] as? String

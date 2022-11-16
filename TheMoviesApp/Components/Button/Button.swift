@@ -14,15 +14,31 @@ enum ButtonStyle {
 }
 
 class Button:UIButton {
-    private var buttonStyle:ButtonStyle
+    private var buttonStyle:ButtonStyle = .normal
     
     init(style:ButtonStyle) {
-        
-        super.init(type: .system)
+        super.init(frame: .zero)
         self.buttonStyle = style
+        setBranding()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    private func setBranding(){
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.setTitleColor(.white, for: .normal)
+        self.layer.cornerRadius = 20
+        switch (buttonStyle) {
+        case .cancel:
+            self.backgroundColor = .gray
+        case .normal:
+            self.backgroundColor = Settings.shared.secondaryColor
+        }
+        
+        NSLayoutConstraint.activate([
+            self.heightAnchor.constraint(equalToConstant: 40)
+        ])
     }
 }

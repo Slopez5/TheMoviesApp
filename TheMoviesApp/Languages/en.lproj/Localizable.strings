@@ -6,3 +6,5 @@
   
 */
 "EMAIL_LBL_TAG" = "Email";
+"LOGIN_LBL_TAG" = "Login";
+"SIGN_UP_LBL_TAG" = "Sign Up";

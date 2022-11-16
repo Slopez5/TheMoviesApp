@@ -21,4 +21,23 @@ class HomeView:UIViewController {
     }()
     
     var coordinator:MainCoordinator?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        initView()
+        initActions()
+        setUpBinds()
+    }
+    
+    func initView(){
+        
+    }
+    
+    func initActions(){
+        
+    }
+    
+    func setUpBinds(){
+        
+    }
 }

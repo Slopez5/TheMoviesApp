@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>secondaryColor</key>
+	<string>#01b4e4</string>
 	<key>primaryColor</key>
 	<string>#0d253f</string>
 	<key>imagePath</key>

@@ -6,3 +6,5 @@
   
 */
 "EMAIL_LBL_TAG" = "Correo Electrónico";
+"LOGIN_LBL_TAG" = "Iniciar Sesión";
+"SIGN_UP_LBL_TAG" = "Registrate";

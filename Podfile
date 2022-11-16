@@ -6,7 +6,10 @@ target 'TheMoviesApp' do
   use_frameworks!
 
   # Pods for TheMoviesApp
-
+  pod 'Alamofire'
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
+  
   target 'TheMoviesAppTests' do
     inherit! :search_paths
     # Pods for testing
