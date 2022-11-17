@@ -28,4 +28,16 @@ class API {
             }
         }
     }
+    
+    func getImage(url:String , _ completion:@escaping (_ image:UIImage?) -> Void){
+        AF.request(url, method: .get).response { response in
+            if let responseDataOptional = response.value, let responseData = responseDataOptional {
+                let image = UIImage(data: responseData)
+                completion(image)
+                return
+            }
+            completion(nil)
+            return
+        }
+    }
 }

@@ -14,6 +14,7 @@ class Settings {
     var primaryColor:UIColor?
     var secondaryColor:UIColor?
     var apiURL:String?
+    var imagesUrl:String?
     var apiKey:String?
     var fontSize:CGFloat = 16
     var fontFamily:UIFont?
@@ -26,6 +27,7 @@ class Settings {
         if let colorHex = brandingPlist["secondaryColor"] as? String {
             self.secondaryColor = UIColor(hex: colorHex)
         }
+        self.imagesUrl = brandingPlist["imagePath"] as? String ?? ""
         self.apiURL = (brandingPlist["APIUrl"] as? String ?? "") + (brandingPlist["versionAPI"] as? String ?? "")
         self.apiKey = brandingPlist["apiKey"] as? String
         

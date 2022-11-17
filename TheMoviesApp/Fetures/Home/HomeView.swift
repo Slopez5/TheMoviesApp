@@ -46,7 +46,7 @@ class HomeView:UIViewController {
     func setUpBinds(){
         homeViewModel.movies.bind { movies in
             DispatchQueue.main.async {
-                if let movies = movies {
+                if let movies = movies, !movies.results.isEmpty {
                     self.moviesCollectionView.reloadMovies(movies: movies.results)
                 }
             }
@@ -60,7 +60,7 @@ class HomeView:UIViewController {
     private func addSectionsSegments(){
         self.view.addSubview(sectionsSegmentControl)
         NSLayoutConstraint.activate([
-            sectionsSegmentControl.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 80),
+            sectionsSegmentControl.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 20),
             sectionsSegmentControl.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             sectionsSegmentControl.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             sectionsSegmentControl.heightAnchor.constraint(equalToConstant: 40)

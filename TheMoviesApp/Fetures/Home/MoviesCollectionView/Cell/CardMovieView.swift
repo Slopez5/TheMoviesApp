@@ -12,11 +12,14 @@ class CardMovieView:UIView{
     
     lazy var containerView:UIView = {
         let container:UIView = UIView()
+        container.backgroundColor = .blue
+        container.translatesAutoresizingMaskIntoConstraints = false
         return container
     }()
     
     lazy var moviePictureImageView:UIImageView = {
         let moviePicture:UIImageView = UIImageView()
+        moviePicture.translatesAutoresizingMaskIntoConstraints = false
         return moviePicture
     }()
     
@@ -27,6 +30,7 @@ class CardMovieView:UIView{
     
     lazy var stackView: UIStackView = {
         let stack:UIStackView = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .horizontal
         stack.distribution = .fillProportionally
         return stack
@@ -48,15 +52,39 @@ class CardMovieView:UIView{
     }()
     
     
-    init(movie:MovieDetail) {
+    init() {
         super.init(frame: .zero)
+        self.translatesAutoresizingMaskIntoConstraints = false
+        initView()
+        
+    }
+    
+    func drawMovie(movie:MovieDetail){
+        setBranding(movie:movie)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func setBranding(movie:MovieDetail){
+        
+        let baseUrl = Settings.shared.imagesUrl ?? ""
+        getImage(url: baseUrl + movie.backdropPath)
+        movieTitleLabel.text = movie.title
+        layoutIfNeeded()
+    }
+    
+    func getImage(url:String){
+        API().getImage(url: url) { image in
+            DispatchQueue.main.async {
+                self.moviePictureImageView.image = image
+            }
+        }
+    }
+    
     private func initView(){
+        
         addContainerView()
         addMoviePicture()
         addMovieTitleLabel()
