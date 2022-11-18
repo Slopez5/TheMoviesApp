@@ -32,6 +32,11 @@ class HomeView:UIViewController {
         setUpBinds()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
     func addActions(){
         sectionsSegmentControl.addTarget(self, action: #selector(changeCategory(_:)), for: .valueChanged)
     }
@@ -48,6 +53,8 @@ class HomeView:UIViewController {
             DispatchQueue.main.async {
                 if let movies = movies, !movies.results.isEmpty {
                     self.moviesCollectionView.reloadMovies(movies: movies.results)
+                } else {
+                    self.moviesCollectionView.reloadMovies(movies: [])
                 }
             }
         }
@@ -60,7 +67,7 @@ class HomeView:UIViewController {
     private func addSectionsSegments(){
         self.view.addSubview(sectionsSegmentControl)
         NSLayoutConstraint.activate([
-            sectionsSegmentControl.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 20),
+            sectionsSegmentControl.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 40),
             sectionsSegmentControl.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             sectionsSegmentControl.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             sectionsSegmentControl.heightAnchor.constraint(equalToConstant: 40)
@@ -69,11 +76,20 @@ class HomeView:UIViewController {
     
     private func addMoviesCollection(){
         self.view.addSubview(moviesCollectionView)
+        moviesCollectionView.delegate = self
         NSLayoutConstraint.activate([
             moviesCollectionView.topAnchor.constraint(equalTo: self.sectionsSegmentControl.bottomAnchor),
             moviesCollectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             moviesCollectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             moviesCollectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
         ])
+    }
+}
+
+extension HomeView: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = moviesCollectionView.cellForItem(at: indexPath) as! MovieCollectionCell
+        guard let movieSelected = cell.movieSelected else { return }
+        coordinator?.movieDetails(movie: movieSelected, animated: true)
     }
 }

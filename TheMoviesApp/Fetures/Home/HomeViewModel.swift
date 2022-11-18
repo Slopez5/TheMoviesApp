@@ -13,11 +13,11 @@ class HomeViewModel {
     
     func getMovies(index:Int) {
         switch index {
-        case 1:
+        case 0:
             popularMovies()
-        case 2:
+        case 1:
             topRateMovies()
-        case 3:
+        case 2:
             favoriteMovies()
         default:
             popularMovies()
@@ -31,10 +31,12 @@ class HomeViewModel {
     }
     
     private func topRateMovies(){
-        
+        MovieAPI().topRateMovies { [weak self] movies in
+            self?.movies.value = movies
+        }
     }
     
     private func favoriteMovies(){
-        
+        movies.value = nil
     }
 }

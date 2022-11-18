@@ -10,6 +10,7 @@ import UIKit
 
 class MovieCollectionCell:UICollectionViewCell {
     var movieCardView:CardMovieView = CardMovieView()
+    var movieSelected:MovieDetail?
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -33,6 +34,6 @@ class MovieCollectionCell:UICollectionViewCell {
     
     func setData(movie:MovieDetail) {
         movieCardView.drawMovie(movie:movie)
-        
+        self.movieSelected = movie
     }
 }

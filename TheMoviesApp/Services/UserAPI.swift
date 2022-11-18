@@ -13,7 +13,9 @@ class UserAPI{
     func login(email:String, password:String, _ completion: @escaping(_ authResult:AuthDataResult?, _ error:Error?) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) {authResult, error in
             DispatchQueue.main.async {
-                
+                if let user = authResult?.user {
+                    Globals.shared.saveUser(user: User(name: user.displayName ?? "", lastName: "", email: user.email ?? "", telephone: user.phoneNumber ?? ""))
+                }
                 completion(authResult,error)
             }
         }

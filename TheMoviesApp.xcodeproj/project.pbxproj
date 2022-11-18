@@ -37,6 +37,8 @@
 		1077EE7D2924C70C006527EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1077EE7C2924C70C006527EA /* Assets.xcassets */; };
 		1077EE7E2924C75A006527EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1077EE802924C75A006527EA /* Localizable.strings */; };
 		1077EE832924C989006527EA /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1077EE822924C989006527EA /* Input.swift */; };
+		8B2DF440292798A50031D458 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2DF43F292798A50031D458 /* Globals.swift */; };
+		8B2DF4422927997D0031D458 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2DF4412927997D0031D458 /* User.swift */; };
 		8BF54F61292548B8005A8E77 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF54F60292548B8005A8E77 /* Observable.swift */; };
 		8BF54F6329254CDE005A8E77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BF54F6229254CDE005A8E77 /* GoogleService-Info.plist */; };
 		8BF54F6429255853005A8E77 /* TheMovieApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1077EE772924C6E3006527EA /* TheMovieApp-Info.plist */; };
@@ -112,6 +114,8 @@
 		6A5F2B30FB7B9E887CF5BE16 /* Pods-TheMoviesApp-TheMoviesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMoviesApp-TheMoviesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TheMoviesApp-TheMoviesAppUITests/Pods-TheMoviesApp-TheMoviesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		70FB2572F9D6A36544E79C0E /* Pods-TheMoviesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMoviesApp.release.xcconfig"; path = "Target Support Files/Pods-TheMoviesApp/Pods-TheMoviesApp.release.xcconfig"; sourceTree = "<group>"; };
 		75657979A1196BAC2BCFA991 /* Pods-TheMoviesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMoviesAppTests.release.xcconfig"; path = "Target Support Files/Pods-TheMoviesAppTests/Pods-TheMoviesAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B2DF43F292798A50031D458 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		8B2DF4412927997D0031D458 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8BF54F60292548B8005A8E77 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		8BF54F6229254CDE005A8E77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8BF54F6629255C56005A8E77 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				1077EE5A2924C67B006527EA /* Movie.swift */,
+				8B2DF4412927997D0031D458 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 			children = (
 				1077EE4E2924C66A006527EA /* Settings.swift */,
 				8BF54F7829257F85005A8E77 /* CollectionViewCells.swift */,
+				8B2DF43F292798A50031D458 /* Globals.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -696,6 +702,7 @@
 				1053ACF22924CF1C001C8104 /* Button.swift in Sources */,
 				1077EE702924C6D2006527EA /* HomeViewModel.swift in Sources */,
 				1077EE562924C675006527EA /* APIRoutes.swift in Sources */,
+				8B2DF440292798A50031D458 /* Globals.swift in Sources */,
 				1077EE432924C5E5006527EA /* Coordinator.swift in Sources */,
 				1077EE422924C5E5006527EA /* MainNavigation.swift in Sources */,
 				8BF54F7529256C22005A8E77 /* MovieCollectionCell.swift in Sources */,
@@ -704,6 +711,7 @@
 				8BF54F6F292565EC005A8E77 /* MoviesCollectionView.swift in Sources */,
 				1077EE572924C675006527EA /* MovieAPI.swift in Sources */,
 				1077EE742924C6D8006527EA /* UIColorExtension.swift in Sources */,
+				8B2DF4422927997D0031D458 /* User.swift in Sources */,
 				1077EE752924C6D8006527EA /* StringExtension.swift in Sources */,
 				8BF54F7929257F85005A8E77 /* CollectionViewCells.swift in Sources */,
 				1077EE692924C6C4006527EA /* MovieDetailsViewModel.swift in Sources */,

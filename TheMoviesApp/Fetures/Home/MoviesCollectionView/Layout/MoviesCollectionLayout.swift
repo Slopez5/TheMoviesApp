@@ -11,7 +11,7 @@ import UIKit
 class MoviesCollectionLayout:UICollectionViewFlowLayout {
     override func prepare() {
         super.prepare()
-        self.itemSize = CGSize(width: 160, height: 100)
+        self.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         self.scrollDirection = .vertical
     }
 }

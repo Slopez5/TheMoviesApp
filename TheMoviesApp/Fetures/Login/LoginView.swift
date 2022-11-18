@@ -68,8 +68,8 @@ class LoginView:UIViewController {
     
     func setUpBinds(){
         loginViewModel.auth.bind { [weak self] authenticate in
-            if let authenticate = authenticate, authenticate {
-                self?.coordinator?.home(animated: true)
+            if let authenticate = authenticate, authenticate, let user = Globals.shared.user  {
+                self?.coordinator?.home(user:user,animated: true)
             }
         }
     }

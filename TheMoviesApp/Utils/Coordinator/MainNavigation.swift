@@ -21,8 +21,8 @@ class MainCoordinator:Coordinator {
     }
     
     func start() {
-        if Settings.shared.isLogged {
-            home(animated: false)
+        if let user = Globals.shared.user {
+            home(user:user, animated: false)
         } else {
             login(animated: false)
         }
@@ -40,15 +40,17 @@ class MainCoordinator:Coordinator {
         navigationController.pushViewController(registerView, animated: animated)
     }
     
-    func home(animated:Bool){
+    func home(user:User, animated:Bool){
         let homeView = HomeView()
         homeView.coordinator = self
         navigationController.pushViewController(homeView, animated: animated)
     }
     
-    func movieDetails(animated:Bool){
+    func movieDetails(movie:MovieDetail, animated:Bool){
         let movieDetails = MovieDetailsView()
+        navigationController.navigationBar.isHidden = false
         movieDetails.coordinator = self
+        movieDetails.movieDetailsViewModel.movieDetails(movieId: movie.id)
         navigationController.pushViewController(movieDetails, animated: animated)
     }
 }

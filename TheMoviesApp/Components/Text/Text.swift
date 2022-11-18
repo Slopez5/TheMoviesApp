@@ -37,10 +37,10 @@ class Text:UILabel {
             self.isUserInteractionEnabled = true
             break
         case .title:
-            self.font = UIFont.systemFont(ofSize: Settings.shared.fontSize + 4)
+            self.font = UIFont.boldSystemFont(ofSize: Settings.shared.fontSize + 4)
             break
         case .subtitle:
-            self.font = UIFont.systemFont(ofSize: Settings.shared.fontSize + 2)
+            self.font = UIFont.boldSystemFont(ofSize: Settings.shared.fontSize + 2)
             break
         case .message:
             self.font = UIFont.systemFont(ofSize: Settings.shared.fontSize)

@@ -10,4 +10,5 @@ import Foundation
 struct APIRoutes {
     static let populatMovies = "/movie/popular"
     static let topRatedMovies = "/movie/top_rated"
+    static let movieDetails = "/movie/"
 }

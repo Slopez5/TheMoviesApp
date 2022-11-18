@@ -10,7 +10,6 @@ import UIKit
 
 class Settings {
     static let shared = Settings()
-    var isLogged:Bool = true
     var primaryColor:UIColor?
     var secondaryColor:UIColor?
     var apiURL:String?

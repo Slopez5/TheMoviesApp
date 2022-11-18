@@ -9,7 +9,6 @@ import Foundation
 
 extension String {
     func getString() -> String{
-        
         return NSLocalizedString(self, comment: "").isEmpty ? self : NSLocalizedString(self, comment: "")
     }
 }
